@@ -1,0 +1,36 @@
+Run_analysis.R
+
+This script downloads files from "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip","wearable".
+
+Relevant files are read such as:
+- 'features.txt': List of all features.
+
+- 'activity_labels.txt': Links the class labels with their activity name.
+
+- 'train/X_train.txt': Training set.
+
+- 'train/y_train.txt': Training labels.
+
+- 'test/X_test.txt': Test set.
+
+- 'test/y_test.txt': Test labels.
+
+- 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30.
+
+Each test subject is matched with the activities undertaken, and each trainer is matched with the training activities.
+
+The two datasets with training data and test data are merged into one dataframe.
+
+The relevant columns are extracted which are:
+
+-"id": a unique identifier for each of the participants in the excercise
+"subject": whether the subject is a candidate(test-taker), or trainer
+"meanX": mean for the X axis
+"meanY": mean for the Y axis
+"meanZ": mean for the Z axis
+"stdX": standard deviation for the X axis
+"stdY": standard deviation for the Y axis 
+"stdZ": standard deviation for the Z axis
+"activity": the type of activity being recorded.
+
+A new table is created that summarises the mean and standard deviation on each activity for each subject.
