@@ -33,7 +33,7 @@ meanstd<-mergedvariables[,c(1,2,3:8,564)]
 
 
 #Appropriately labels the data set with descriptive variable names.
-activitynames<-c("id","subject","meanX","meanY","meanZ","stdX","stdY","stdZ","activity")
+activitynames<-c("id","subject","BodyAcceleration_meanX","BodyAcceleration_meanY","BodyAcceleration_meanZ","BodyAcceleration_stdX","BodyAcceleration_stdY","BodyAcceleration_stdZ","activity")
 names(meanstd)<-(activitynames)
 
 #Uses descriptive activity names to name the activities in the data set
