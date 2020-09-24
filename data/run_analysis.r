@@ -10,7 +10,7 @@ if(!file.exists("./data")){
  download.file(fileUrl,"./data")
 }
 
-setwd("D:/R-4.0.0/R project assignment/Programming assignment 3/gettingdata/data")
+setwd("./data")
 
 
 #data cleaning
