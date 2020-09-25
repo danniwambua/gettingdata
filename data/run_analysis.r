@@ -46,4 +46,4 @@ for(i in 1:6){meanstd["activity"][meanstd["activity"]==i]<-activitylabel[i,]$act
 
 #From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 data.table(meanstd)
-meanstd %>% group_by(subject,id,activity) %>% summarise(across(contains("mean"),mean)) 
+meanstd %>% group_by(subject,id,activity) %>% summarise(across(c(contains("mean","std")),mean)) 
